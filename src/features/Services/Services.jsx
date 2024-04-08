@@ -5,8 +5,8 @@ const Services = ({ services }) => {
       {services.map(({ id, service_name, city_icon }) => {
         return (
           <div key={id} className="service-card">
-            <img src={city_icon} alt="Service Icon" />
-            <h6 className="service-name">{service_name}</h6>
+            <img src={city_icon} alt="Service Icon" className="service-img" />
+            <span className="service-name">{service_name}</span>
           </div>
         );
       })}

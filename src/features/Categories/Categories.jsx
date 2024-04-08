@@ -1,4 +1,4 @@
-// import data from "../../data.json";
+import data from "../../data.json";
 import Services from "../Services/Services";
 import { useSelector, useDispatch } from "react-redux";
 import { getCategoriesData } from "./CategoriesAction";
@@ -22,14 +22,25 @@ const Categories = () => {
     return <div>Loading...</div>;
   }
 
+  console.log('data', data)
+
   return (
-    <div className="dashboard-wrapper">
-      {categoryData &&
+    <div className="category-wrapper">
+      {/* {categoryData &&
         categoryData.categories && 
         categoryData.categories.map(({ id, category_name, services }) => {
           return (
             <div key={id} className="dashboard-card-wrapper">
               <h5>{category_name}</h5>
+              <Services services={services} />
+            </div>
+          );
+        })} */}
+      {data &&
+        data.data.categories.map(({ id, category_name, services }) => {
+          return (
+            <div key={id} className="category-card">
+              <h5 className="category-name">{category_name}</h5>
               <Services services={services} />
             </div>
           );
