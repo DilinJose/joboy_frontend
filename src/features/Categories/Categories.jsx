@@ -1,30 +1,39 @@
-import data from "../../data.json";
+// import data from "../../data.json";
 import Services from "../Services/Services";
-import { useSelector,useDispatch } from 'react-redux'
-
-import "./Categories.css";
+import { useSelector, useDispatch } from "react-redux";
 import { getCategoriesData } from "./CategoriesAction";
 import { useEffect } from "react";
 
-const Categories = () => {
-  const dispatch = useDispatch()
-  const categoryData = useSelector((state)=>state.categories.categoriesData)
+import "./Categories.css";
 
-  console.log('categoryData', categoryData)
+const Categories = () => {
+  const dispatch = useDispatch();
+  const categoryData = useSelector((state) => state.categories.categoriesData);
+
   useEffect(() => {
-   dispatch(getCategoriesData())
-  }, [])
-  
+    try {
+      dispatch(getCategoriesData());
+    } catch (error) {
+      console.error("Error fetching categories", error);
+    }
+  }, [dispatch]);
+
+  if (!categoryData) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="dashboard-wrapper">
-      {categoryData.categories.map(({ id, category_name, services }) => {
-        return (
-          <div key={id} className="dashboard-card-wrapper">
-            <h5>{category_name}</h5>
-            <Services services={services} />
-          </div>
-        );
-      })}
+      {categoryData &&
+        categoryData.categories && 
+        categoryData.categories.map(({ id, category_name, services }) => {
+          return (
+            <div key={id} className="dashboard-card-wrapper">
+              <h5>{category_name}</h5>
+              <Services services={services} />
+            </div>
+          );
+        })}
     </div>
   );
 };

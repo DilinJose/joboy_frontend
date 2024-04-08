@@ -1,12 +1,12 @@
+import "./Services.css";
 const Services = ({ services }) => {
-  console.log("services", services);
   return (
-    <div>
+    <div className="service-wrapper">
       {services.map(({ id, service_name, city_icon }) => {
         return (
-          <div key={id}>
-            <img src={city_icon} alt="Service Icon"/>
-            <div>{service_name}</div>
+          <div key={id} className="service-card">
+            <img src={city_icon} alt="Service Icon" />
+            <h6 className="service-name">{service_name}</h6>
           </div>
         );
       })}

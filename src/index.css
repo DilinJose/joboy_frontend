@@ -57,5 +57,7 @@ button:focus-visible {
   }
 } */
 :root {
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
