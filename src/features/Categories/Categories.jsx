@@ -22,7 +22,7 @@ const Categories = () => {
     return <div>Loading...</div>;
   }
 
-  console.log('data', data)
+  console.log("data", data);
 
   return (
     <div className="category-wrapper">
