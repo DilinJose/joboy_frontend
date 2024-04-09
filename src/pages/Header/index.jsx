@@ -1,9 +1,13 @@
 import logo from "../../assets/joboyLogo.png";
 import ButtonComponets from "../../components/ButtonComponets/ButtonComponets";
+import "./index.css";
 const index = () => {
   return (
-    <nav className="navbar navbar-expand-xl  border-bottom">
+    // <nav className="navbar navbar-expand-xl navbar-fixed-top border-bottom navigation-bar">
+          <nav className="navbar navbar-expand-xl navbar-fixed-top border-bottom">
+
       <div className="container-fluid">
+
         <a className="navbar-brand" href="#">
           <img src={logo} alt="Logo" width={130} />
         </a>

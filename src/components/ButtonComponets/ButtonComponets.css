@@ -1,6 +1,12 @@
-.button-wrapper{
-    border: none;
-    background-color: #ffca08;
-    padding: 10px 15px;
-    border-radius: 10px;
+.button-wrapper {
+  border: none;
+  background-color: #ffca08;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+.button-wrapper:hover {
+  border: none;
+  background-color: #333;
+  color: #ffca08;
 }

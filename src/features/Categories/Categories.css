@@ -1,12 +1,10 @@
 .category-wrapper{
     margin: 30px 0;
-    /* background-color: darkolivegreen; */
-    /* background-image: url("../../assets//img.jpg"); */
-}
+    }
 .category-card{
     margin: 30px 0;
 
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     border-radius: 10px;
     padding: 10px;
 }
