@@ -1,9 +1,4 @@
 .service-wrapper {
-  /* display: flex;
-  justify-content:start;
-  align-items: flex-start;
-  flex-wrap: wrap; */
-
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -20,17 +15,18 @@
   border-radius: 10px;
   backdrop-filter: blur(15px);
   cursor: pointer;
-transform: all;
+  transform: all;
+  /* font-weight: 500; */
 }
 .service-card:hover {
-    background-color: #ffca08;
-    transition: all 0.8s;
-  }
+  background-color: #ffca08;
+  transition: all 0.8s;
+  color: white;
+}
 .service-img {
   width: 50%;
   object-fit: cover;
   aspect-ratio: 1/1;
-  /* border: 1px solid rgb(227, 227, 227); */
   border-radius: 10px;
   padding: 10px;
 }

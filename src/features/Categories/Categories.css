@@ -1,15 +1,23 @@
-.category-wrapper{
-    margin: 30px 0;
-    }
-.category-card{
-    margin: 30px 0;
-
-    /* border: 1px solid grey; */
-    border-radius: 10px;
-    padding: 10px;
+.category-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.category-name{
-    padding: 10px 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid grey;
+.catg-filter-header {
+  border-bottom: 1px solid black;
+}
+
+.category-wrapper {
+  margin: 10px 0;
+}
+.category-card {
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+.category-name {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
 }
