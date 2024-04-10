@@ -1,6 +1,4 @@
 .dashboard-wrapper{
-    margin-top: 20px;
-}
-.dashboard-card-wrapper{
-    border: 1px solid black;
+    /* margin-top: 20px; */
+    min-height: 90vh;
 }

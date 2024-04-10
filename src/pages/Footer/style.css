@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.footer-contact {
+  border-right: 1px solid grey;
+}
 
 .footer-contact-header {
   color: #0f1e3d;
@@ -16,16 +19,18 @@
 
 .footer-contact-input {
   width: 484px;
-  height: 70px;
+  height: 50px;
   margin-right: 26px;
   border: none;
+  border-radius: 10px;
 }
 
 .footer-contact-sent {
   width: 134px;
-  height: 70px;
+  height: 50px;
   background-color: #ffca08;
   border: none;
+  border-radius: 10px;
 }
 
 .footer-contact-connect {
@@ -34,10 +39,10 @@
 
 ::placeholder {
   color: #b2b2b2;
-  font-size: 23px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  padding-left: 102px;
+  padding-left: 50px;
 }
 
 .footer-menus {
@@ -76,6 +81,9 @@
   .footer-wrapper {
     flex-wrap: wrap;
   }
+  .footer-contact {
+    border-right: none;
+  }
   .footer-menus {
     flex-wrap: wrap;
   }
@@ -85,6 +93,9 @@
   .footer-wrapper {
     flex-wrap: wrap;
   }
+  .footer-contact {
+    border-right: none;
+  }
   .footer-menus {
     flex-wrap: wrap;
   }
@@ -93,6 +104,9 @@
 @media only screen and (max-width: 480px) {
   .footer-wrapper {
     flex-wrap: wrap;
+  }
+  .footer-contact {
+    border-right: none;
   }
   .footer-menus {
     flex-wrap: wrap;

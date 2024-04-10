@@ -1,8 +1,10 @@
 import Categories from "../Categories/Categories";
 
+import './Dashboard.css'
+
 const Dashboard = () => {
   return (
-    <div className="container">
+    <div className="container dashboard-wrapper">
       <Categories />
     </div>
   );
