@@ -7,6 +7,7 @@
 }
 .footer-contact {
   border-right: 1px solid grey;
+  width: 75%;
 }
 
 .footer-contact-header {
@@ -46,7 +47,8 @@
 }
 
 .footer-menus {
-  margin-left: 178px;
+  border: 1px solid;
+  margin-left: 30px;
   width: 36%;
   display: flex;
   justify-content: space-between;
@@ -73,7 +75,7 @@
 
 @media only screen and (max-width: 1200px) {
   .footer-menus {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 }
 
@@ -83,10 +85,18 @@
   }
   .footer-contact {
     border-right: none;
+    width: 100%;
   }
   .footer-menus {
     flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+
   }
+  .footer-contact-input {
+    width: 325px;
+  }
+ 
 }
 
 @media only screen and (max-width: 760px) {
@@ -95,9 +105,14 @@
   }
   .footer-contact {
     border-right: none;
+    width: 100%;
+
   }
   .footer-menus {
     flex-wrap: wrap;
+  }
+  .footer-contact-input {
+    width: 225px;
   }
 }
 
@@ -107,6 +122,8 @@
   }
   .footer-contact {
     border-right: none;
+    width: 100%;
+
   }
   .footer-menus {
     flex-wrap: wrap;

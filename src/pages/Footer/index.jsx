@@ -4,7 +4,7 @@ import connect from "../../assets/social.svg";
 const index = () => {
   return (
     <div className="footer-wrapper">
-      <div className="footer-contact w-75 pe-4" >
+      <div className="footer-contact pe-4" >
         <div className="mb-3">
           <h6 className="mb-2">INDIA</h6>
           <div className="d-flex justify-content-start align-items-center flex-wrap">

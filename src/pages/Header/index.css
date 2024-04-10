@@ -26,3 +26,7 @@
 
   content: "hai";
 }
+
+.active{
+  font-weight: 500;
+}

@@ -5,6 +5,7 @@ import "./index.css";
 import { FaShoppingCart, FaSearch } from "react-icons/fa";
 import Modal from "react-modal";
 import img from "../../assets/doodle-banner.png";
+import { Link } from "react-router-dom";
 const Index = () => {
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const Index = () => {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      borderRadius: "10px",
+      borderRadius: "10px", 
     },
   };
 
@@ -53,7 +54,7 @@ const Index = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100">
               <div
-                className="d-flex justify-content-between"
+                className="d-flex justify-content-between flex-wrap"
                 style={{ width: "100%" }}
               >
                 <div className="d-flex align-items-center justify-content-evenly">
@@ -82,7 +83,7 @@ const Index = () => {
                     </ul>
                   </li>
                 </div>
-                <div className="d-flex align-items-center justify-content-evenly">
+                <div className="d-flex align-items-center justify-content-evenly flex-wrap">
                   <li className="nav-item mx-3">
                     <a className="nav-link active" aria-current="page" href="#">
                       <FaSearch />
@@ -94,9 +95,7 @@ const Index = () => {
                     </a>
                   </li>
                   <li className="nav-item mx-3">
-                    <a className="nav-link active" aria-current="page" href="#">
-                      Service
-                    </a>
+                      <Link className="nav-link active" to={"/"}> Service</Link>
                   </li>
                   <li className="nav-item mx-3">
                     <a className="nav-link active" aria-current="page" href="#">
