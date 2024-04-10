@@ -26,17 +26,18 @@ const Categories = () => {
 
   return (
     <div className="category-wrapper">
-      {/* {categoryData &&
+
+      {categoryData &&
         categoryData.categories && 
         categoryData.categories.map(({ id, category_name, services }) => {
           return (
-            <div key={id} className="dashboard-card-wrapper">
-              <h5>{category_name}</h5>
-              <Services services={services} />
-            </div>
+            <div key={id} className="category-card">
+            <h5 className="category-name">{category_name}</h5>
+            <Services services={services} />
+          </div>
           );
-        })} */}
-      {data &&
+        })}
+      {/* {data &&
         data.data.categories.map(({ id, category_name, services }) => {
           return (
             <div key={id} className="category-card">
@@ -44,7 +45,7 @@ const Categories = () => {
               <Services services={services} />
             </div>
           );
-        })}
+        })} */}
     </div>
   );
 };
