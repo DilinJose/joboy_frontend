@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "../features/Dashboard/Dashboard";
-import Header from "../pages/Header/Index";
+import Header from "../pages/Header/index";
 import Footer from "../pages/Footer";
 const index = () => {
   return (
