@@ -15,7 +15,7 @@
   border-radius: 10px;
   backdrop-filter: blur(15px);
   cursor: pointer;
-  transform: all;
+  /* transform: all; */
   /* font-weight: 500; */
 }
 .service-card:hover {
